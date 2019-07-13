@@ -10,7 +10,7 @@ EOF
    vzctl exec2 $ctid apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db
    vzctl exec2 $ctid apt-get -qq update
    vzctl exec2 $ctid DEBIAN_FRONTEND=noninteractive apt-get -y install mariadb-server
-   echo ""
+   echo "done "$ctid
 exit
   fi
 done
